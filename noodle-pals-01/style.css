@@ -1,0 +1,195 @@
+.image-wrapper {
+  width: 360px;
+  height: 400px;
+  background: linear-gradient(#f2ffeb, #c3ffa3);
+  border: 5px solid #333;
+  border-radius: 25%;
+  margin: 100px auto;
+  position: relative;
+}
+
+.head {
+  position: relative;
+  top: 50px;
+  left: 130px;
+  z-index: 3;
+}
+
+.head .hair {
+  width: 35px;
+  height: 35px;
+  background: #d46216;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.head .hair::before,
+.head .hair::after {
+	content: '';
+  width: 35px;
+  height: 35px;
+  background: #d46216;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.head .hair.left::before {
+  top: -10px;
+  left: 20px;
+}
+
+.head .hair.left::after {
+  top: 5px;
+  left: 20px;
+}
+
+.head .hair.right {
+  left: 65px;
+}
+
+.head .hair.right::before {
+  top: -10px;
+  left: -20px;
+}
+
+.head .hair.right::after {
+  top: 5px;
+  left: -20px;
+}
+
+.cap {
+  width: 100px;
+  height: 35px;
+  background: repeating-linear-gradient(to right, #d35353, #5c1c2b 2px);
+  border-radius: 25%;
+  position: absolute;
+  top: 50px;
+  left: 130px;
+  z-index: 3;
+}
+
+.face {
+  width: 120px;
+  height: 110px;
+  background: #f1c40d;
+  border-radius: 25%;
+  position: absolute;
+  top: 70px;
+  left: 120px;
+  z-index: 2;
+}
+
+.face .eye {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(#fff, #bcbcb9 90%);
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+}
+
+.face .eye.left {
+  left: 20px;
+}
+
+.face .eye.right {
+  right: 20px;
+}
+
+.face .eye .pupil {
+  width: 15px;
+  height: 15px;
+  background: #2a2a2a;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.face .nose {
+  width: 20px;
+  height: 20px;
+  background: #e57036;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+  left: 50px;
+}
+
+.face .mouth {
+  width: 25px;
+  height: 10px;
+  border: 3px solid #2a2a2a;
+  border-top: 0;
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  top: 83px;
+  left: 45px;
+}
+
+.body {
+  width: 100px;
+  height: 120px;
+  background: repeating-linear-gradient(#d35353, #5c1c2b 4px);
+  border-radius: 50%;
+  position: absolute;
+  top: 170px;
+  left: 130px;
+  z-index: 1;
+}
+
+.hand {
+  width: 100px;
+  height: 20px;
+  background: #f1c40d;
+  border-radius: 10px;
+  position: absolute;
+  top: 220px;
+  z-index: 0;
+}
+
+.hand.left {
+  left: 70px;
+  transform: rotate(-45deg);
+}
+
+.hand.right {
+  right: 70px;
+  transform: rotate(45deg);
+}
+
+.leg {
+  width: 20px;
+  height: 70px;
+  background: #f1c40d;
+  position: absolute;
+  top: 275px;
+  z-index: 0;
+}
+
+.leg.left {
+  left: 155px;
+}
+
+.leg.right {
+  right: 155px;
+}
+
+.leg .shoe {
+  width: 42px;
+  height: 15px;
+  background: repeating-linear-gradient(to right, #d35353, #5c1c2b 2px);
+  border-bottom: 4px solid #753502;
+  position: absolute;
+  top: 68px;
+}
+
+.leg.left .shoe {
+  border-top-left-radius: 20px;
+  right: 0;
+}
+
+.leg.right .shoe {
+  border-top-right-radius: 20px;
+  left: 0;
+}
